@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# mfclassic
+gcc -o mfclassic main.cpp nfc-mfclassic.h mifare.c -lnfc -std=c11
+
+# nfc-poll
+#gcc -o poll nfc-poll.c nfc-utils.c ../include/nfc/nfc-types.h -lnfc -std=c11

@@ -1,0 +1,3 @@
+#include "src/Kalman/Kalman.hpp"
+#include "src/Kalman/HKalman.hpp"
+#include "src/Kalman/BKalman.hpp"

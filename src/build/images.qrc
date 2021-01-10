@@ -1,0 +1,84 @@
+﻿<RCC>
+    <qresource prefix="/fonts">
+        <file alias="roboto_black">fonts/Roboto/Roboto-Black.ttf</file>
+        <file alias="roboto_bold">fonts/Roboto/Roboto-Bold.ttf</file>
+        <file alias="roboto_medium">fonts/Roboto/Roboto-Medium.ttf</file>
+        <file alias="roboto_regular">fonts/Roboto/Roboto-Regular.ttf</file>
+        <file alias="roboto_light">fonts/Roboto/Roboto-Light.ttf</file>
+        <file alias="roboto_thin">fonts/Roboto/Roboto-Thin.ttf</file>
+    </qresource>
+    <qresource prefix="/">
+
+	  <file>images/logo.svg</file>
+	  <file>images/sentenz.svg</file>
+
+        <file>images/codelabs_green.svg</file>
+        <file>images/office_green.svg</file>
+        <file>images/sandbox_green.svg</file>
+
+        <file>images/odometer.svg</file>
+        <file>images/paternoster.svg</file>
+        <file>images/panel.svg</file>
+        <file>images/tools.svg</file>
+        <file>images/temperature.svg</file>
+        <file>images/input.svg</file>
+        <file>images/cloud.svg</file>
+        <file>images/diagnosis.svg</file>
+        <file>images/calculator.svg</file>
+        <file>images/database.svg</file>
+        <file>images/system.svg</file>
+        <file>images/key.svg</file>
+        <file>images/region.svg</file>
+        <file>images/design.svg</file>
+        <file>images/reset.svg</file>
+        <file>images/info.svg</file>
+        <file>images/diagnosis-color.svg</file>
+        <file>images/calculator-color.svg</file>
+        <file>images/database-color.svg</file>
+        <file>images/system-color.svg</file>
+        <file>images/key-color.svg</file>
+        <file>images/region-color.svg</file>
+        <file>images/design-color.svg</file>
+        <file>images/reset-color.svg</file>
+        <file>images/info-color.svg</file>
+
+        <file>images/cancel.svg</file>
+        <file>images/restart.svg</file>
+        <file>images/shutdown.svg</file>
+
+        <file>images/ic_widgets_white_128dp.svg</file>
+        <file>images/ic_settings_white_128dp.svg</file>
+        <file>images/ic_power_white_128dp.svg</file>
+        <file>images/ic_lock_white_128dp.svg</file>
+
+        <file>images/digits.svg</file>
+        <file>images/numeral_1.svg</file>
+        <file>images/numeral_2.svg</file>
+        <file>images/touch_1.svg</file>
+        <file>images/touch_2.svg</file>
+
+        <file>images/ic_play_arrow_white_128dp.svg</file>
+        <file>images/ic_stop_white_128dp.svg</file>
+        <file>images/ic_dialpad_white_128dp.svg</file>
+        <file>images/ic_touch_app_white_128dp.svg</file>
+        <file>images/ic_check_circle_blue_128dp.svg</file>
+        <file>images/ic_warning_red_128dp.svg</file>
+        <file>images/play.svg</file>
+        <file>images/pause.svg</file>
+        <file>images/stop.svg</file>
+        <file>images/break.svg</file>
+
+        <file>images/arrow_up_1.svg</file>
+        <file>images/arrow_up_2.svg</file>
+        <file>images/arrow_down_1.svg</file>
+        <file>images/arrow_down_2.svg</file>
+        <file>images/ic_arrow_forward_gray_128dp.svg</file>
+
+        <file>images/ok_1.svg</file>
+        <file>images/ok_2.svg</file>
+        <file>images/screen_1.svg</file>
+        <file>images/screen_2.svg</file>
+
+    </qresource>
+</RCC>
+

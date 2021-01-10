@@ -1,0 +1,29 @@
+#!/bin/sh
+
+PATH_OPEN62541="/home/pi/open62541/open62541"
+
+SRC_GENERATED="$PATH_OPEN62541/examples/sentenz/sc/model/generate"
+CS_NODESET="UMATI"
+PATH_SRC_GENERATED="$SRC_GENERATED/$CS_NODESET"
+
+BIN_GENERATED="$PATH_OPEN62541/examples/sentenz/sc/model/bin"
+PATH_BIN_GENERATED="$BIN_GENERATED/$CS_NODESET"
+
+
+
+C_FLAGS=" -std=c99 -pipe -w  -Wall -Wextra -Wpedantic -Werror -Wno-static-in-inline -Wno-overlength-strings -Wno-unused-parameter -Wc++-compat -Wformat -Wformat-security -Wformat-nonliteral -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wuninitialized -Winit-self -Wcast-qual -Wstrict-overflow -Wnested-externs -Wmultichar -Wundef -fno-strict-aliasing -fexceptions -fstack-protector-strong -g -flto -fno-fat-lto-objects   -Wshadow -Wconversion -fvisibility=hidden -fPIC "
+#
+
+C_LIBS=" -L$PATH_OPEN62541/build/bin -lopen62541 "
+#
+
+C_DEFINES=" -DUA_ARCHITECTURE_POSIX  "
+# -DUA_INTERNAL -DUA_ENABLE_AMALGAMATION
+
+C_INCLUDES=" -I$PATH_OPEN62541/src -I$PATH_OPEN62541/src/server -I$PATH_OPEN62541 -I$PATH_OPEN62541/build -I$PATH_OPEN62541/arch -I$PATH_OPEN62541/include -I$PATH_OPEN62541/plugins/include -I$PATH_OPEN62541/deps -I$PATH_OPEN62541/src/pubsub -I$PATH_SRC_GENERATED "
+# -I$PATH_OPEN62541/build/src_generated 
+
+C_FILES=" $PATH_SRC_GENERATED/namespace_umati_generated.c $PATH_SRC_GENERATED/types_umati_generated.c "
+#
+
+/usr/bin/cc $C_DEFINES $C_INCLUDES $C_FLAGS -o $PATH_BIN_GENERATED/server_nodeset_umati $PATH_BIN_GENERATED/server_nodeset_umati.c $C_LIBS $C_FILES

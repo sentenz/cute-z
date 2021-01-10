@@ -1,0 +1,46 @@
+Changes in Version 0.05.01
+
+* Naming concept for placeholders: item name singular
+* PartType renamed to ProductionPartType
+* EngineeringUnits of OverrideItemType set to mandatory
+* Changed EventTypes in StateMachines to Subtypes of TranistionEventType
+* Introduced ProcessIrregularity and PartQuality instead of QualityEnum
+* Renamed enumerations (removed "enum" at the end)
+* Renamed InterruptionConditionTypes to Interruption[...]ConditionType
+* Added InterruptionByOperatorConditionType
+* Added InterruptionProcessConditionType
+* Added InterruptionExternalConditionType
+* Deleted InterruptionUtilityConditionType
+* Changes in IdentificationType
+* Introduced the variable "IsSerialProduction" in the ProductionJobType
+* Changed the names of [...]StateMode to [...]Monitoring, changed the structure of the [...]MonitoringType elements
+* Added AggregatedChannelMonitoringType
+* Changed the name of "NumberInList" in LampType to "PositionFromBottom"
+* Made "PositionFromBottom" in LampType mandatory
+* Made "Stacklight" in MonitoringType optional
+* Changed the name of "NumberInList" in BaseProductionType to "IndexInList"
+* Deleted SpindleRotationSpeed in SpindleMonitoringType
+* Added SpindleIsRotating in SpindleMonitoringType
+* Deleted ControllerStateModeType and ControllerState
+* Deleted LeastOneAxisMoving from ChannelMonitoringType
+* Added LeastOneAxisMoving to MachineOperationMonitoringType
+* Changed ModellingRule of PartsCompleted in PartsInProductionListType to “Optional”
+* Changed ModellingRule of PartsPlanned in PartsInProductionListType to “Optional”
+* Changed Type of "PartsInProduction" in ProductionJobType to ObjectType
+* Changed name of "PartsInProduction" in ProductionJobType to "Parts"
+* Deleted PartsInProductionListType
+* Changed Type of "ProductionPrograms" in ProductionJobType to ObjectType
+* Deleted ProductionProgramListType
+* Renamed "ToolManagementType" to "EquipmentType"
+* New Structure of MachineToolType with EquipmentType, IdentificationType, MonitoringType, NotificationType and ProductionType
+* Deleted BasePrognosisType
+* Substituted PartChangePrognosisType with RawPartLoadPrognosisType and PartUnloadPrognosisType
+* Added "PartCounter" to "Statistics" in ProductionType
+* Substituted MachineToolAlarmType with AlertConditionType
+* Added NotificationEventType
+* Deleted AlertType
+* Deleted "orange" from LampColor
+* PartsPlanned and PartsCompleted are now in ProductionJobType
+* Added HoursOfOperation to MachineOperationMonitoringType
+* Deleted SoftwareComponentVersionType
+* Deleted Affect ReferenceType

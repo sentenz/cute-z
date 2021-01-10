@@ -1,0 +1,27 @@
+cd cd#
+# In *.pro file
+#
+
+TRANSLATIONS = *.ts (e.g. build_de.ts)
+
+#
+# In main.cpp file
+#
+
+QTranslator translator; 
+translator.load("build_de"); 
+app.installTranslator(&translator); 
+___________________________________________________________
+
+#
+# In command window (MinGW) change to working dir
+#
+
+lupdate *.pro (e.g. project.pro)
+linguist *.ts (e.g. build-de_DE.ts)
+
+# .
+# .
+# .
+
+lrelease *.ts (e.g. build_de.ts)

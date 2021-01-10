@@ -1,0 +1,8 @@
+﻿<RCC>
+    <qresource prefix="/">
+
+	  <file>STouchCanvas.qml</file>
+
+    </qresource>
+</RCC>
+

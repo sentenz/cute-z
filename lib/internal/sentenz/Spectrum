@@ -1,0 +1,3 @@
+#include "src/Spectrum/Fourier.hpp"
+#include "src/Spectrum/Hilbert.hpp"
+#include "src/Spectrum/Window.hpp"

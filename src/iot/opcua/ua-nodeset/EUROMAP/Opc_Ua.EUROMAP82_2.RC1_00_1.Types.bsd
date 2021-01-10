@@ -1,0 +1,23 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.euromap.org/euromap82-2/" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://www.euromap.org/euromap82-2/">
+ <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+ <opc:EnumeratedType LengthInBits="32" Name="ControllerTypeEnumeration">
+  <opc:EnumeratedValue Name="CLOSED_LOOP_CONTROL" Value="0"/>
+  <opc:EnumeratedValue Name="MANUAL" Value="1"/>
+  <opc:EnumeratedValue Name="SYNCHRONOUS_ZONE" Value="2"/>
+  <opc:EnumeratedValue Name="CASCADE" Value="3"/>
+  <opc:EnumeratedValue Name="COOL_ZONE" Value="4"/>
+ </opc:EnumeratedType>
+ <opc:EnumeratedType LengthInBits="32" Name="ZoneStatusEnumeration">
+  <opc:EnumeratedValue Name="OTHER" Value="0"/>
+  <opc:EnumeratedValue Name="GOOD" Value="1"/>
+  <opc:EnumeratedValue Name="SENSOR_FAULT" Value="2"/>
+  <opc:EnumeratedValue Name="TEMPERATURE_SENSOR_BROKEN" Value="3"/>
+  <opc:EnumeratedValue Name="TEMPERATURE_SENSOR_REVERSED" Value="4"/>
+  <opc:EnumeratedValue Name="POWER_UNIT_FAILED" Value="5"/>
+  <opc:EnumeratedValue Name="HEATING_OUTPUT_TO_LOW" Value="6"/>
+  <opc:EnumeratedValue Name="ERROR" Value="7"/>
+  <opc:EnumeratedValue Name="WARNING" Value="8"/>
+  <opc:EnumeratedValue Name="LEAKAGE_DETECTED" Value="9"/>
+ </opc:EnumeratedType>
+</opc:TypeDictionary>
+
